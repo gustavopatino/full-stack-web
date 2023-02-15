@@ -8,7 +8,15 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		vite: {
+			server: {
+				hmr: {
+					clientPort: process.env.HMR_HOST ? 443 : 4000,
+					host: process.env.HMR_HOST ? process.env.HMR_HOST.substring("https://").length : "localhost"
+				}
+			}
+		}
 	}
 };
 

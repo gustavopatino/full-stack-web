@@ -1,3 +1,11 @@
+# Creación del proyecto
+
+No es recomendable trabajar sobre la rama **MAIN** por lo tanto, cada vez que necesitamos una nueva característica, en **GITHUB**
+creamos un **ISSUE** para poder trabajar en **GITPOD** el ambiente de desarrollo en la nube y luego fusionamos a la rama principal.
+
+> ISSUES -> {Nombre} -> New Issue -> {característica} -> Gitpod -> {commit} -> Pull request -> delete branch
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
